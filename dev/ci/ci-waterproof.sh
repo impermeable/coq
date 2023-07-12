@@ -15,5 +15,5 @@ if [ "$DOWNLOAD_ONLY" ]; then exit 0; fi
   dune build -p coq-waterproof
   make
   make install
-  dune install coq-waterproof
+  dune install coq-waterproof --prefix=$CI_INSTALL_DIR
 )
